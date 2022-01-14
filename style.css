@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* .e-logo {
+  width: 160px;
+  height: 60px;
+} */
+
+.slider-section {
+  height: 560px;
+}
+
+.bx {
+  box-shadow: 2px 2px 18px #aaaaaa;
+}
+
+.hot-sale {
+  background-color: #bc1f27;
+  color: #fff;
+  height: 50px;
+}
+
+.about-card {
+  padding: 0.5rem 0.5rem !important;
+}
