@@ -21,7 +21,7 @@
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
           <img src="./images/Etranzact_Logo.png" alt="" width="200" height="24" />
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -30,11 +30,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-edit d-flex justify-content-evenly">
-            <li><a href="" class="active-link">Product</a></li>
-            <li><a href="" class="">Category</a></li>
+            <li><a href="./manage-products.html" class="active-link">Product</a></li>
+            <li><a href="./manage-categories.html" class="">Category</a></li>
           </ul>
           <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
-
           <div class="ms-5" data-bs-toggle="modal--" data-bs-target="#registration-modal" type="submit">
             <i class="fa fa-user-circle text-primary user" aria-hidden="true"></i>
           </div>
@@ -77,7 +76,7 @@
           <td>10.00</td>
           <td>9999</td>
           <td class="d-flex justify-content-evenly">
-            <button class="btn btn-primary edit-btn">Edit</button>
+            <button class="btn btn-primary edit-btn" data-bs-toggle="modal" data-bs-target="#edit-product-modal">Edit</button>
             <button class="btn btn-danger del-btn">Delete</button>
           </td>
         </tr>
@@ -88,7 +87,7 @@
           <td>10.00</td>
           <td>9999</td>
           <td class="d-flex justify-content-evenly">
-            <button class="btn btn-primary edit-btn">Edit</button>
+            <button class="btn btn-primary edit-btn" data-bs-toggle="modal" data-bs-target="#edit-product-modal">Edit</button>
             <button class="btn btn-danger del-btn">Delete</button>
           </td>
         </tr>
@@ -99,7 +98,7 @@
           <td>10.00</td>
           <td>9999</td>
           <td class="d-flex justify-content-evenly">
-            <button class="btn btn-primary edit-btn">Edit</button>
+            <button class="btn btn-primary edit-btn" data-bs-toggle="modal" data-bs-target="#edit-product-modal">Edit</button>
             <button class="btn btn-danger del-btn">Delete</button>
           </td>
         </tr>
@@ -110,7 +109,7 @@
           <td>10.00</td>
           <td>9999</td>
           <td class="d-flex justify-content-evenly">
-            <button class="btn btn-primary edit-btn">Edit</button>
+            <button class="btn btn-primary edit-btn" data-bs-toggle="modal" data-bs-target="#edit-product-modal">Edit</button>
             <button class="btn btn-danger del-btn">Delete</button>
           </td>
         </tr>
@@ -121,7 +120,7 @@
           <td>10.00</td>
           <td>9999</td>
           <td class="d-flex justify-content-evenly">
-            <button class="btn btn-primary edit-btn">Edit</button>
+            <button class="btn btn-primary edit-btn" data-bs-toggle="modal" data-bs-target="#edit-product-modal">Edit</button>
             <button class="btn btn-danger del-btn">Delete</button>
           </td>
         </tr>
@@ -132,7 +131,7 @@
           <td>10.00</td>
           <td>9999</td>
           <td class="d-flex justify-content-evenly">
-            <button class="btn btn-primary edit-btn">Edit</button>
+            <button class="btn btn-primary edit-btn" data-bs-toggle="modal" data-bs-target="#edit-product-modal">Edit</button>
             <button class="btn btn-danger del-btn">Delete</button>
           </td>
         </tr>
@@ -143,7 +142,7 @@
           <td>10.00</td>
           <td>9999</td>
           <td class="d-flex justify-content-evenly">
-            <button class="btn btn-primary edit-btn">Edit</button>
+            <button class="btn btn-primary edit-btn" data-bs-toggle="modal" data-bs-target="#edit-product-modal">Edit</button>
             <button class="btn btn-danger del-btn">Delete</button>
           </td>
         </tr>
@@ -154,7 +153,7 @@
           <td>10.00</td>
           <td>9999</td>
           <td class="d-flex justify-content-evenly">
-            <button class="btn btn-primary edit-btn">Edit</button>
+            <button class="btn btn-primary edit-btn" data-bs-toggle="modal" data-bs-target="#edit-product-modal">Edit</button>
             <button class="btn btn-danger del-btn">Delete</button>
           </td>
         </tr>
@@ -165,7 +164,7 @@
           <td>10.00</td>
           <td>9999</td>
           <td class="d-flex justify-content-evenly">
-            <button class="btn btn-primary edit-btn">Edit</button>
+            <button class="btn btn-primary edit-btn" data-bs-toggle="modal" data-bs-target="#edit-product-modal">Edit</button>
             <button class="btn btn-danger del-btn">Delete</button>
           </td>
         </tr>
@@ -176,7 +175,7 @@
           <td>10.00</td>
           <td>9999</td>
           <td class="d-flex justify-content-evenly">
-            <button class="btn btn-primary edit-btn">Edit</button>
+            <button class="btn btn-primary edit-btn" data-bs-toggle="modal" data-bs-target="#edit-product-modal">Edit</button>
             <button class="btn btn-danger del-btn">Delete</button>
           </td>
         </tr>
@@ -290,6 +289,80 @@
         </div>
       </div>
     </div>
+    <!-- Edit modal -->
+    <div class="modal fade" id="edit-product-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header text text-center mb-0 p-0">
+          <h3 class="modal-title w-100" id="staticBackdropLabel">
+            Edit Product
+          </h3>
+          <button type="button" class="btn-close px-4" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="f-name">Name</label>
+              <input type="text" class="form-control" name="f-name" required value="Predator Gold Energy Drink 40cl X 12"/>
+            </div>
+            <div class="mb-3">
+              <label for="image-url">Image Url</label>
+              <input type="text" class="form-control" name="image-url" required value="https://post.img/predator-gold-energy-drink.jpg"/>
+            </div>
+            <div class="mb-3">
+              <div class="">
+                <label for="description">Description</label>
+              </div>
+              <textarea name="message" style="width:470px; height:100px;" >Predators live by instinct and conquer with courage. Predator will uncage your animal spirit, keeping you focused and feeling fresh longer.</textarea>
+            </div>
+            <div class="mb-3">
+              <label for="description">Category</label>
+              <select class="form-select" aria-label="Default select example">
+                <option selected></option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                <option value="3">Four</option>
+                <option value="3">Five</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="contact">Social Media</label>
+            </div>
+            <div class="mb-3">
+              <div class="border rounded p-3">
+                <div class="border rounded p-3 d-flex justify-content-between mb-2">
+                  <div class="mb-1">
+                    <label for="phone-number" class="mb-1">Name</label>
+                    <input type="text" class="form-control form-control-sm" name="facebook" required value="Facebook"/>
+                  </div>
+                  <div class="mb-1">
+                    <label for="phone-number" class="mb-1">URL</label>
+                    <input type="text" class="form-control form-control-sm" name="phonenumber" required  value="https://fb.com/predato..."/>
+                  </div>
+                </div>
+                <div class="border rounded p-3 d-flex justify-content-between mb-2">
+                  <div class="mb-1">
+                    <label for="phone-number" class="mb-1">Twitter</label>
+                    <input type="text" class="form-control form-control-sm" name="phonenumber" required value="Twitter"/>
+                  </div>
+                  <div class="mb-1">
+                    <label for="phone-number" class="mb-1">URL</label>
+                    <input type="text" class="form-control form-control-sm" name="phonenumber" required value="https://t.co/predator-e..."/>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mb-3 d-grid">
+              <button type="button" class="btn btn-primary">Update Product</button>
+            </div>
+        </div>
+        </form>
+      </div>
+    </div>
+    <!-- Edit modal -->
+  </div>
   </div>
   </div>
 
