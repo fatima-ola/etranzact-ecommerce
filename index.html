@@ -109,7 +109,7 @@
       <hr />
       <div class="">
         <div class="row my-4">
-          <div class="col-lg-3 col-md-3 p-3 ">
+          <div class="col-lg-3 col-md-3 p-3" data-bs-toggle="modal" data-bs-target="#product-details-modal">
             <div class="card c-hover">
               <div class="card-body about-card" style="padding: 0.5rem 0.5rem">
                 <img src="./images/a.png" class="card-img-top" alt="one" />
@@ -118,7 +118,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-3 p-3 ">
+          <div class="col-lg-3 col-md-3 p-3" data-bs-toggle="modal" data-bs-target="#product-details-modal">
             <div class="card c-hover">
               <div class="card-body about-card" style="padding: 0.5rem 0.5rem">
                 <img src="./images/b.png" class="card-img-top" alt="one" />
@@ -127,7 +127,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-3 p-3 ">
+          <div class="col-lg-3 col-md-3 p-3" data-bs-toggle="modal" data-bs-target="#product-details-modal">
             <div class="card c-hover">
               <div class="card-body about-card" style="padding: 0.5rem 0.5rem">
                 <img src="./images/c.png" class="card-img-top" alt="one" />
@@ -136,7 +136,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-3 p-3 ">
+          <div class="col-lg-3 col-md-3 p-3" data-bs-toggle="modal" data-bs-target="#product-details-modal">
             <div class="card c-hover c-best-seller">
               <div class="best-seller ">
                 <label class="bg-danger">BEST SELLER</label>
@@ -150,7 +150,7 @@
           </div>
         </div>
         <div class="row my-4">
-          <div class="col-lg-3 col-md-3 p-3">
+          <div class="col-lg-3 col-md-3 p-3" data-bs-toggle="modal" data-bs-target="#product-details-modal">
             <div class="card c-hover">
               <div class="card-body about-card" style="padding: 0.5rem 0.5rem">
                 <img src="./images/e.png" class="card-img-top" alt="one" />
@@ -159,7 +159,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md- p-3">
+          <div class="col-lg-3 col-md- p-3" data-bs-toggle="modal" data-bs-target="#product-details-modal">
             <div class="card c-hover">
               <div class="card-body about-card" style="padding: 0.5rem 0.5rem">
                 <img src="./images/f.png" class="card-img-top" alt="one" />
@@ -168,7 +168,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-3 p-3">
+          <div class="col-lg-3 col-md-3 p-3" data-bs-toggle="modal" data-bs-target="#product-details-modal">
             <div class="card c-hover card-s">
               <div class="card-body about-card c-best-seller" style="padding: 0.5rem 0.5rem">
                 <div class="best-seller ">
@@ -180,7 +180,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-3 p-3">
+          <div class="col-lg-3 col-md-3 p-3" data-bs-toggle="modal" data-bs-target="#product-details-modal">
             <div class="card c-hover">
               <div class="card-body about-card" style="padding: 0.5rem 0.5rem">
                 <img src="./images/h.png" class="card-img-top" alt="one" />
@@ -354,18 +354,55 @@
       </div>
     </div>
   </div>
+  <!-- Product details Modal -->
+  <div class="modal fade" id="product-details-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+  aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header text text-center mb-0 p-0">
+        <h3 class="modal-title w-100" id="staticBackdropLabel">
+          product Details
+        </h3>
+        <button type="button" class="btn-close px-4" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-3">
+              <div class="card">
+                <img src="./images/a.png" class="card-img-top" alt="one" />
+              </div>
+            </div>
+            <div class="col-lg-9 col-md-9">
+              <p>20000mAh Intelligence Portable Power Bank</p>
+              <div class="d-flex justify-content-">
+                <button type="button" class="btn" style="background-color: #ACACAC;">Category A</button>
+                <button type="button" class="btn" style="background-color: #ACACAC;">Category B</button>
+              </div>
+              <h3>N 2,900</h3>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+            </div>
+            <div>
+              <h5>Product Description</h5>
+              <hr />
+              <p>Charging your smart devices just got convenient and easy with this power bank Charger. It charges all battery Capacities E.g 3000mAh, 4000mAh, 5000mAh and 6000mAh Battery Capacities. 
+                Its capacity proffers the ideal solution to the unending need for longer battery power. The USB-</p>
+            </div>  
+            <div>
+              <h5>Seller Information</h5>
+              <hr />
+             <h5>Olayinka Ibrahim James</h5>
+             <ul>
+               <li>08123456789 <span class="px-3">109, Adeniyi Jones Avenue, Ikeja, Lagos</span></li>
+               <li>08088888888 <span class="px-3">69, Gods’s Glory Street, Ago-Iwoye, Ogun</span></li>
+             </ul>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-
-  <!-- Optional JavaScript; choose one of the two! -->
-
-  <!-- Option 1: Bootstrap Bundle with Popper -->
-  <!-- <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script> -->
-
-  <!-- Option 2: Separate Popper and Bootstrap JS -->
+</div>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
     integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
